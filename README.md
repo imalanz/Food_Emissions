@@ -50,4 +50,4 @@ How much does it cost to produce each type of food, with this table we can see w
 
 
 
-![portada](https://raw.githubusercontent.com/imalanz/_proy4/main/images/a.webp)
+![portada](https://github.com/imalanz/_proy4/blob/main/images/s.jpg?raw=true)
