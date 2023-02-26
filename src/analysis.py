@@ -13,7 +13,6 @@ import requests
 from dotenv import load_dotenv
 import pymongo
 
-# PRODUCTION.ipynb
 
 def iterate_column_years (year):
     # iterate 2010
