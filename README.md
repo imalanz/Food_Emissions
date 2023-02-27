@@ -41,9 +41,23 @@ How much does it cost to produce each type of food, with this table we can see w
 
 
 ## SQL structure.
-## Graphic exploration.
+Pass all the new data frames into a SQL structure, with primary keys as items ID and conected to each other for a better compehention.
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/f.png?raw=true)
+## Graphic exploration.
+
+![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+
+![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+
+![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+
+![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+
+https://public.tableau.com/app/profile/imanol.lanzagorta.diaz/viz/FoodEmissions_16775259232060/Story3?publish=yes
+
+
+
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
 
