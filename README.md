@@ -45,23 +45,34 @@ Pass all the new data frames into a SQL structure, with primary keys as items ID
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/f.png?raw=true)
 ## Graphic exploration.
+### Area harvested.
+- Geo spatial graph to see the quantity of area in Hectaries that each contry uses.
 
-![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+![area](https://github.com/imalanz/FoodEmissions_proy4/blob/main/images/area.jpg?raw=true)
 
-![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+### Production quantity.
+- Geo spatial graph for a better comprehention in the quantity of production in tonnes of different types of food.
 
-![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+![production](https://github.com/imalanz/FoodEmissions_proy4/blob/main/images/production.jpg?raw=true)
 
-![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+### Producer prices USD.
+- Graph of differences in costs of the acumulated foods per country.
 
+![price](https://github.com/imalanz/FoodEmissions_proy4/blob/main/images/price.jpg?raw=true)
+
+
+This is the link for a better read of graphs.
 https://public.tableau.com/app/profile/imanol.lanzagorta.diaz/viz/FoodEmissions_16775259232060/Story3?publish=yes
 
-
-
-
-![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
-
+## Conclution.
+We need to take care of ourselfs and our planet, each food we eat is taking a big quantity of emissions and we dont really know it untill we see the docs. 
 
 
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/s.jpg?raw=true)
+
+![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+
+
+
+

@@ -42,22 +42,6 @@ def clean2_df (df):
     df.drop_duplicates(inplace=True)
     return df
 
-# Merging all years df to main. 2010 - 2021
-def merging_production_area (df, df2010, df2011, df2012, df2013, df2014, df2015, df2016, df2017, df2018, df2019, df2020, df2021):
-    z = pd.merge(df, df2010, how="left").merge(df2011, how="left").merge(df2012, how="left")
-    z = pd.merge(z, df2013, how="left").merge(df2014, how="left").merge(df2015, how="left")
-    z = pd.merge(z, df2016, how="left").merge(df2017, how="left").merge(df2018, how="left")        
-    z = pd.merge(z, df2019, how="left").merge(df2020, how="left").merge(df2021, how="left")  
-    return z
-
-# Merging all years df to main in price db, no 2021 year.
-def merging_price (df, df2010, df2011, df2012, df2013, df2014, df2015, df2016, df2017, df2018, df2019, df2020):
-    z = pd.merge(df, df2010, how="left").merge(df2011, how="left").merge(df2012, how="left")
-    z = pd.merge(z, df2013, how="left").merge(df2014, how="left").merge(df2015, how="left")
-    z = pd.merge(z, df2016, how="left").merge(df2017, how="left").merge(df2018, how="left")        
-    z = pd.merge(z, df2019, how="left").merge(df2020, how="left") 
-    return z
-
 # Cleaning and replacing the food names for matching other df.
 def replace_items (df):
     import re
@@ -103,6 +87,49 @@ def replace_items (df):
     df["Food"] = df["Food"].str.title()
     df["Food"] = df["Food"].str.strip()
     return df
+
+# Create Food ID from emissions db.
+def food_id (df):
+    # add emissions df to get ID Food column.
+    emissions = pd.read_csv("D:\ironhack\proyectos\FoodEmissions_proy4\data\csv_from_python\\food_emissions.csv")
+    # Drop all columns not needed.
+    emi = emissions.drop(columns=["Eutrophying emissions per kilogram (gPO₄eq per kilogram)",	"Freshwater withdrawals (liters per kilogram)",	"Greenhouse gas emissions (kgCO₂eq per 1000kcal)", "Land use (m² per kilogram)", "Scarcity-weighted water use (liters per kilogram)"])
+    # Merge to df.
+    x = pd.merge(df, emi, on= "Food", how="left")
+    return x
+
+# create ID for country.
+def Country_ID (df):
+    unique = pd.DataFrame(set(df["Country"]))
+    # Create df from unique values in original df.
+    unique = unique.reset_index()
+    unique = unique.rename(columns={"index":"Country_id", 0:"Country"})
+    z = pd.merge(df, unique, on = "Country", how="left")
+    return z
+
+# cleaning after merging new id columns
+def ID_cleaning (df):
+    # Drop columns.
+    df = df.drop(columns=["Country_Code", "Food_Code"])
+    # rearange columns.
+    df = df[["Country_id", "Country", "Food_id", "Food", "Unit"]]
+    return df
+
+# Merging all years df to main. 2010 - 2021
+def merging_production_area (df, df2010, df2011, df2012, df2013, df2014, df2015, df2016, df2017, df2018, df2019, df2020, df2021):
+    z = pd.merge(df, df2010, how="left").merge(df2011, how="left").merge(df2012, how="left")
+    z = pd.merge(z, df2013, how="left").merge(df2014, how="left").merge(df2015, how="left")
+    z = pd.merge(z, df2016, how="left").merge(df2017, how="left").merge(df2018, how="left")        
+    z = pd.merge(z, df2019, how="left").merge(df2020, how="left").merge(df2021, how="left")  
+    return z
+
+# Merging all years df to main in price db, no 2021 year.
+def merging_price (df, df2010, df2011, df2012, df2013, df2014, df2015, df2016, df2017, df2018, df2019, df2020):
+    z = pd.merge(df, df2010, how="left").merge(df2011, how="left").merge(df2012, how="left")
+    z = pd.merge(z, df2013, how="left").merge(df2014, how="left").merge(df2015, how="left")
+    z = pd.merge(z, df2016, how="left").merge(df2017, how="left").merge(df2018, how="left")        
+    z = pd.merge(z, df2019, how="left").merge(df2020, how="left") 
+    return z
 
 
 # For emissions DB.
