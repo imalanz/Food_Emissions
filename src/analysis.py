@@ -137,5 +137,15 @@ def cleaning_item_column_emissions (df):
     df["Food"] = df["Food"].str.replace('.*Soymilk*.', "Soya beans", regex=True)
     df["Food"] = df["Food"].str.replace('.*Dark Chocolate*.', "Chocolate", regex=True)
     df["Food"] = df["Food"].str.replace('.*Cane Sugar*.', "Sugar cane", regex=True)
-
     return df
+
+# create ID for food.
+def create_ID (df):
+    unique = pd.DataFrame(set(df["Food"]))
+    # Create df from unique values in original df.
+    unique = unique.reset_index()
+    unique = unique.rename(columns={"index":"Food_id", 0:"Food"})
+    z = pd.merge(df, unique, on = "Food", how="left")
+    # re arange order
+    z = z[["Food_id", "Food", "Eutrophying emissions per kilogram (gPO₄eq per kilogram)", "Freshwater withdrawals (liters per kilogram)", "Greenhouse gas emissions (kgCO₂eq per 1000kcal)", "Land use (m² per kilogram)", "Scarcity-weighted water use (liters per kilogram)"]]
+    return z
