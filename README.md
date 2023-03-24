@@ -3,26 +3,20 @@
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/a.jpg?raw=true)
 
 ## Introduction
-How much you contaminate every time you have a dish in your table?
+Food industry is a crucial part of our lives, but we seldom realize how much it contributes to polluting the environment. In this project, we aimed to calculate the emissions produced by the most consumed foods and predict the future of the food industry and its impact on our planet.
 
-The food industry is one of the biggest in the world, and is so necesary for us to eat that we dont even think about how much we ar polluting the world by eating.
-
-In this proyect I wanted to see from the most eateds foods how many emissions produce and calculate hows going to be the future for the industry and our world.
 ### Process.
-- Extract the data information.
-- Transform the data into a database and analyse it, by cleaning them so they can match each other, making new columns with more information.
-- Import the Data into SQL structure.
-- Introduce the data into tableau for a better graphic analysis of the data.
+To achieve our goal, we extracted data from various sources such as the Food and Agriculture Organization of the United Nations and Kaggle. We transformed the data into a database and analyzed it by cleaning and matching it to make new columns with relevant information. We then imported the data into a SQL structure and used Tableau for better graphic analysis of the data.
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/b.jpg?raw=true)
 
 ## Data Bases.
 
-I took most of the data from the "Food and Agriculture Organization of the United Nations" and also from kaggle. Could find much information about the production, quantity, area harvested and pollution.
+We obtained most of the data from the Food and Agriculture Organization of the United Nations and Kaggle. We collected information related to production, quantity, area harvested, and pollution.
 
 ### Emissions DB.
 
-For the emissions data base found in kaggle we have technical information about the quantity of pollution for each type of food. we have: 
+We obtained data related to emissions from Kaggle, which provided technical information about the quantity of pollution for each type of food. The data included Eutrophying emissions, Water withdrawals, Greenhouse gases, Scarcity-weighted water use, and Land use. 
 
 - "Eutrophying emissions": Eutrophying emissions represent runoff of excessnutrients into the surrounding environment andwaterways, which affect and pollute ecosystems.
 - "Water withdrawals": or water abstractions, are defined as freshwater taken from ground or surface water sources, either permanently or temporarily, and conveyed to a place of use.
@@ -32,19 +26,21 @@ For the emissions data base found in kaggle we have technical information about 
 
 ### Area harvested DB.
 
-Data base created to detect how many hectars of land each type of food needs for their production, have the data for each year.
+We created a database to detect how many hectares of land each type of food needs for their production. The data included information for each year.
 
 ### Production quantity DB.
-This Data Base have the amount of tonnes produced for each food each year.
+This database provided information about the amount of tonnes produced for each food item each year.
 ### Producer Price.
-How much does it cost to produce each type of food, with this table we can see whats the most recomended business for the producers and can make an asumption of what the producers will go for future time. 
+The Producer Price table provided insights into the cost of producing each type of food. With this information, we could determine the most recommended business for the producers and make assumptions about the future of the industry.
 
 
 ## SQL structure.
-Pass all the new data frames into a SQL structure, with primary keys as items ID and conected to each other for a better compehention.
+We passed all the new data frames into a SQL structure with primary keys as items ID and connected to each other for better comprehension.
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/f.png?raw=true)
 ## Graphic exploration.
+
+We created Geo-spatial graphs to visualize the data related to Area Harvested, Production Quantity, and Producer Prices. These graphs helped us gain better insight into the data and understand the variations across different countries.
 ### Area harvested.
 - Geo spatial graph to see the quantity of area in Hectaries that each contry uses.
 
@@ -61,17 +57,17 @@ Pass all the new data frames into a SQL structure, with primary keys as items ID
 ![price](https://github.com/imalanz/FoodEmissions_proy4/blob/main/images/price.jpg?raw=true)
 
 
-This is the link for a better read of graphs.
-https://public.tableau.com/app/profile/imanol.lanzagorta.diaz/viz/FoodEmissions_16775259232060/Story3?publish=yes
+[For the complete graphic study](https://public.tableau.com/app/profile/imanol.lanzagorta.diaz/viz/FoodEmissions_16775259232060/Story3?publish=yes)
+
 
 ## Conclution.
-We need to take care of ourselfs and our planet, each food we eat is taking a big quantity of emissions and we dont really know it untill we see the docs. 
+The project highlights the significant impact of the food industry on the environment. Every food item we consume contributes to pollution, which can have a long-term impact on the planet. We need to take care of ourselves and our planet by being more conscious of our food choices and reducing our carbon footprint.
 
 
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/s.jpg?raw=true)
 
-![portada](https://github.com/imalanz/_proy4/blob/main/images/d.jpg?raw=true)
+
 
 
 
