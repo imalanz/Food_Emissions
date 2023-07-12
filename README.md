@@ -39,6 +39,7 @@ We passed all the new data frames into a SQL structure with primary keys as item
 
 ![portada](https://github.com/imalanz/_proy4/blob/main/images/f.png?raw=true)
 ## Graphic exploration.
+[For the complete graphic study](https://public.tableau.com/app/profile/imanol.lanzagorta.diaz/viz/FoodEmissions_16775259232060/Story3?publish=yes)
 
 We created Geo-spatial graphs to visualize the data related to Area Harvested, Production Quantity, and Producer Prices. These graphs helped us gain better insight into the data and understand the variations across different countries.
 ### Area harvested.
@@ -56,8 +57,6 @@ We created Geo-spatial graphs to visualize the data related to Area Harvested, P
 
 ![price](https://github.com/imalanz/FoodEmissions_proy4/blob/main/images/price.jpg?raw=true)
 
-
-[For the complete graphic study](https://public.tableau.com/app/profile/imanol.lanzagorta.diaz/viz/FoodEmissions_16775259232060/Story3?publish=yes)
 
 
 ## Conclution.
